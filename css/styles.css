@@ -167,7 +167,10 @@ img {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-first-button:hover,
@@ -357,7 +360,7 @@ img {
   color: #fff;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon,
 .footer-icon {
@@ -366,6 +369,9 @@ img {
 .footer .container {
   align-items: baseline;
   gap: 120px;
+}
+.footer-svg-block {
+  width: 208px;
 }
 .footer-list-icons {
   gap: 16px;
@@ -392,7 +398,6 @@ img {
   overflow: hidden;
   cursor: pointer;
 }
-.img-block:hover .overlay,
 .portfolio-item:hover .overlay {
   transform: translateY(0);
 }
